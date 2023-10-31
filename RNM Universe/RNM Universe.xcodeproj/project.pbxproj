@@ -157,6 +157,7 @@
 				523338992AEE1CFF00A24E8C /* Assets.xcassets */,
 				5233389B2AEE1CFF00A24E8C /* LaunchScreen.storyboard */,
 				5233389E2AEE1CFF00A24E8C /* Info.plist */,
+				523338E72AEF4AEA00A24E8C /* Readme.md */,
 			);
 			path = "RNM Universe";
 			sourceTree = "<group>";
@@ -168,7 +169,6 @@
 				523338DF2AEEC55C00A24E8C /* TestData */,
 				523338A72AEE1CFF00A24E8C /* RNM_UniverseTests.swift */,
 				523338DB2AEE322400A24E8C /* CharacterViewModelTests.swift */,
-				523338E72AEF4AEA00A24E8C /* Readme.md */,
 			);
 			path = "RNM UniverseTests";
 			sourceTree = "<group>";

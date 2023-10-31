@@ -1,0 +1,6 @@
+framework module Pods_RNM_Universe {
+  umbrella header "Pods-RNM Universe-umbrella.h"
+
+  export *
+  module * { export * }
+}

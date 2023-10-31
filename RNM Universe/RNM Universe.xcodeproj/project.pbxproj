@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EF88C015E5915824D2E3ECC /* Pods_RNM_Universe_RNM_UniverseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAF439B2136356076FF24BF /* Pods_RNM_Universe_RNM_UniverseUITests.framework */; };
+		523338912AEE1CFC00A24E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338902AEE1CFC00A24E8C /* AppDelegate.swift */; };
+		523338932AEE1CFC00A24E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338922AEE1CFC00A24E8C /* SceneDelegate.swift */; };
+		523338982AEE1CFC00A24E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523338962AEE1CFC00A24E8C /* Main.storyboard */; };
+		5233389A2AEE1CFF00A24E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523338992AEE1CFF00A24E8C /* Assets.xcassets */; };
+		5233389D2AEE1CFF00A24E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5233389B2AEE1CFF00A24E8C /* LaunchScreen.storyboard */; };
+		523338A82AEE1CFF00A24E8C /* RNM_UniverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338A72AEE1CFF00A24E8C /* RNM_UniverseTests.swift */; };
+		523338B22AEE1CFF00A24E8C /* RNM_UniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338B12AEE1CFF00A24E8C /* RNM_UniverseUITests.swift */; };
+		523338B42AEE1CFF00A24E8C /* RNM_UniverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338B32AEE1CFF00A24E8C /* RNM_UniverseUITestsLaunchTests.swift */; };
+		523338C22AEE1D4F00A24E8C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338C12AEE1D4F00A24E8C /* Helper.swift */; };
+		523338C52AEE1D7B00A24E8C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338C42AEE1D7A00A24E8C /* UIViewController+Extension.swift */; };
+		523338C82AEE1D9700A24E8C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338C72AEE1D9700A24E8C /* ServiceManager.swift */; };
+		523338CD2AEE1DC700A24E8C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338CC2AEE1DC700A24E8C /* Character.swift */; };
+		523338D22AEE1E0500A24E8C /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338D12AEE1E0500A24E8C /* CharacterViewController.swift */; };
+		523338D42AEE1E1800A24E8C /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338D32AEE1E1800A24E8C /* CharacterViewModel.swift */; };
+		523338D62AEE1E3200A24E8C /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338D52AEE1E3200A24E8C /* CharacterCollectionViewCell.swift */; };
+		523338D82AEE1E4600A24E8C /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338D72AEE1E4600A24E8C /* CharacterDetailViewController.swift */; };
+		523338DA2AEE1E5E00A24E8C /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338D92AEE1E5E00A24E8C /* EpisodeTableViewCell.swift */; };
+		523338DC2AEE322400A24E8C /* CharacterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338DB2AEE322400A24E8C /* CharacterViewModelTests.swift */; };
+		523338DE2AEEC4DE00A24E8C /* MockServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338DD2AEEC4DD00A24E8C /* MockServiceManager.swift */; };
+		523338E12AEEC57800A24E8C /* TestData+Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338E02AEEC57800A24E8C /* TestData+Character.swift */; };
+		523338E62AEECB4B00A24E8C /* TestData+CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338E52AEECB4B00A24E8C /* TestData+CharacterResponse.swift */; };
+		523338E82AEF4AEA00A24E8C /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 523338E72AEF4AEA00A24E8C /* Readme.md */; };
+		724F3231110956FB821A93D7 /* Pods_RNM_UniverseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E74247D8C17C3C368AAE38 /* Pods_RNM_UniverseTests.framework */; };
+		F11B9E62125405F039871118 /* Pods_RNM_Universe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562A78D64F2FF46057340272 /* Pods_RNM_Universe.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		523338A42AEE1CFF00A24E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 523338852AEE1CFC00A24E8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5233388C2AEE1CFC00A24E8C;
+			remoteInfo = "RNM Universe";
+		};
+		523338AE2AEE1CFF00A24E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 523338852AEE1CFC00A24E8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5233388C2AEE1CFC00A24E8C;
+			remoteInfo = "RNM Universe";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FF0E1480B05C397E3F77A43 /* Pods-RNM Universe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNM Universe.debug.xcconfig"; path = "Target Support Files/Pods-RNM Universe/Pods-RNM Universe.debug.xcconfig"; sourceTree = "<group>"; };
+		1FAF439B2136356076FF24BF /* Pods_RNM_Universe_RNM_UniverseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNM_Universe_RNM_UniverseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4719B24FBA89126CEE6869AF /* Pods-RNM UniverseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNM UniverseTests.release.xcconfig"; path = "Target Support Files/Pods-RNM UniverseTests/Pods-RNM UniverseTests.release.xcconfig"; sourceTree = "<group>"; };
+		4994D19C0F57DFC32FEF5AB6 /* Pods-RNM Universe-RNM UniverseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNM Universe-RNM UniverseUITests.release.xcconfig"; path = "Target Support Files/Pods-RNM Universe-RNM UniverseUITests/Pods-RNM Universe-RNM UniverseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C772598A4F8CEA08CE5C618 /* Pods-RNM UniverseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNM UniverseTests.debug.xcconfig"; path = "Target Support Files/Pods-RNM UniverseTests/Pods-RNM UniverseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5233388D2AEE1CFC00A24E8C /* RNM Universe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNM Universe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		523338902AEE1CFC00A24E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		523338922AEE1CFC00A24E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		523338972AEE1CFC00A24E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		523338992AEE1CFF00A24E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5233389C2AEE1CFF00A24E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5233389E2AEE1CFF00A24E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		523338A32AEE1CFF00A24E8C /* RNM UniverseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNM UniverseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		523338A72AEE1CFF00A24E8C /* RNM_UniverseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNM_UniverseTests.swift; sourceTree = "<group>"; };
+		523338AD2AEE1CFF00A24E8C /* RNM UniverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNM UniverseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		523338B12AEE1CFF00A24E8C /* RNM_UniverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNM_UniverseUITests.swift; sourceTree = "<group>"; };
+		523338B32AEE1CFF00A24E8C /* RNM_UniverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNM_UniverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		523338C12AEE1D4F00A24E8C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		523338C42AEE1D7A00A24E8C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		523338C72AEE1D9700A24E8C /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		523338CC2AEE1DC700A24E8C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		523338D12AEE1E0500A24E8C /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		523338D32AEE1E1800A24E8C /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		523338D52AEE1E3200A24E8C /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		523338D72AEE1E4600A24E8C /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		523338D92AEE1E5E00A24E8C /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		523338DB2AEE322400A24E8C /* CharacterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModelTests.swift; sourceTree = "<group>"; };
+		523338DD2AEEC4DD00A24E8C /* MockServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceManager.swift; sourceTree = "<group>"; };
+		523338E02AEEC57800A24E8C /* TestData+Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestData+Character.swift"; sourceTree = "<group>"; };
+		523338E52AEECB4B00A24E8C /* TestData+CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestData+CharacterResponse.swift"; sourceTree = "<group>"; };
+		523338E72AEF4AEA00A24E8C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		562A78D64F2FF46057340272 /* Pods_RNM_Universe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNM_Universe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E74247D8C17C3C368AAE38 /* Pods_RNM_UniverseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNM_UniverseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74B88489C7B3D195509B0A0 /* Pods-RNM Universe-RNM UniverseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNM Universe-RNM UniverseUITests.debug.xcconfig"; path = "Target Support Files/Pods-RNM Universe-RNM UniverseUITests/Pods-RNM Universe-RNM UniverseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3AE367EB254CDA862CE8CDA /* Pods-RNM Universe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNM Universe.release.xcconfig"; path = "Target Support Files/Pods-RNM Universe/Pods-RNM Universe.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5233388A2AEE1CFC00A24E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11B9E62125405F039871118 /* Pods_RNM_Universe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523338A02AEE1CFF00A24E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724F3231110956FB821A93D7 /* Pods_RNM_UniverseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523338AA2AEE1CFF00A24E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF88C015E5915824D2E3ECC /* Pods_RNM_Universe_RNM_UniverseUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		523338842AEE1CFC00A24E8C = {
+			isa = PBXGroup;
+			children = (
+				5233388F2AEE1CFC00A24E8C /* RNM Universe */,
+				523338A62AEE1CFF00A24E8C /* RNM UniverseTests */,
+				523338B02AEE1CFF00A24E8C /* RNM UniverseUITests */,
+				5233388E2AEE1CFC00A24E8C /* Products */,
+				B2322C9CDFB69509AA3926E9 /* Pods */,
+				5A8C6D8C86B79C81D091331D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5233388E2AEE1CFC00A24E8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5233388D2AEE1CFC00A24E8C /* RNM Universe.app */,
+				523338A32AEE1CFF00A24E8C /* RNM UniverseTests.xctest */,
+				523338AD2AEE1CFF00A24E8C /* RNM UniverseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5233388F2AEE1CFC00A24E8C /* RNM Universe */ = {
+			isa = PBXGroup;
+			children = (
+				523338CE2AEE1DCC00A24E8C /* Views */,
+				523338CB2AEE1DAC00A24E8C /* Models */,
+				523338C62AEE1D8700A24E8C /* Service */,
+				523338C32AEE1D5600A24E8C /* Extension */,
+				523338C02AEE1D2F00A24E8C /* Shared */,
+				523338902AEE1CFC00A24E8C /* AppDelegate.swift */,
+				523338922AEE1CFC00A24E8C /* SceneDelegate.swift */,
+				523338962AEE1CFC00A24E8C /* Main.storyboard */,
+				523338992AEE1CFF00A24E8C /* Assets.xcassets */,
+				5233389B2AEE1CFF00A24E8C /* LaunchScreen.storyboard */,
+				5233389E2AEE1CFF00A24E8C /* Info.plist */,
+			);
+			path = "RNM Universe";
+			sourceTree = "<group>";
+		};
+		523338A62AEE1CFF00A24E8C /* RNM UniverseTests */ = {
+			isa = PBXGroup;
+			children = (
+				523338E22AEEC7B600A24E8C /* Shared */,
+				523338DF2AEEC55C00A24E8C /* TestData */,
+				523338A72AEE1CFF00A24E8C /* RNM_UniverseTests.swift */,
+				523338DB2AEE322400A24E8C /* CharacterViewModelTests.swift */,
+				523338E72AEF4AEA00A24E8C /* Readme.md */,
+			);
+			path = "RNM UniverseTests";
+			sourceTree = "<group>";
+		};
+		523338B02AEE1CFF00A24E8C /* RNM UniverseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				523338B12AEE1CFF00A24E8C /* RNM_UniverseUITests.swift */,
+				523338B32AEE1CFF00A24E8C /* RNM_UniverseUITestsLaunchTests.swift */,
+			);
+			path = "RNM UniverseUITests";
+			sourceTree = "<group>";
+		};
+		523338C02AEE1D2F00A24E8C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				523338C12AEE1D4F00A24E8C /* Helper.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		523338C32AEE1D5600A24E8C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				523338C42AEE1D7A00A24E8C /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		523338C62AEE1D8700A24E8C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				523338C72AEE1D9700A24E8C /* ServiceManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		523338CB2AEE1DAC00A24E8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				523338CC2AEE1DC700A24E8C /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		523338CE2AEE1DCC00A24E8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				523338D02AEE1DE000A24E8C /* CharacterList */,
+				523338CF2AEE1DD500A24E8C /* CharacterDetail */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		523338CF2AEE1DD500A24E8C /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				523338D72AEE1E4600A24E8C /* CharacterDetailViewController.swift */,
+				523338D92AEE1E5E00A24E8C /* EpisodeTableViewCell.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		523338D02AEE1DE000A24E8C /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				523338D12AEE1E0500A24E8C /* CharacterViewController.swift */,
+				523338D32AEE1E1800A24E8C /* CharacterViewModel.swift */,
+				523338D52AEE1E3200A24E8C /* CharacterCollectionViewCell.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		523338DF2AEEC55C00A24E8C /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				523338E02AEEC57800A24E8C /* TestData+Character.swift */,
+				523338E52AEECB4B00A24E8C /* TestData+CharacterResponse.swift */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		523338E22AEEC7B600A24E8C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				523338DD2AEEC4DD00A24E8C /* MockServiceManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5A8C6D8C86B79C81D091331D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				562A78D64F2FF46057340272 /* Pods_RNM_Universe.framework */,
+				1FAF439B2136356076FF24BF /* Pods_RNM_Universe_RNM_UniverseUITests.framework */,
+				63E74247D8C17C3C368AAE38 /* Pods_RNM_UniverseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2322C9CDFB69509AA3926E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FF0E1480B05C397E3F77A43 /* Pods-RNM Universe.debug.xcconfig */,
+				F3AE367EB254CDA862CE8CDA /* Pods-RNM Universe.release.xcconfig */,
+				A74B88489C7B3D195509B0A0 /* Pods-RNM Universe-RNM UniverseUITests.debug.xcconfig */,
+				4994D19C0F57DFC32FEF5AB6 /* Pods-RNM Universe-RNM UniverseUITests.release.xcconfig */,
+				4C772598A4F8CEA08CE5C618 /* Pods-RNM UniverseTests.debug.xcconfig */,
+				4719B24FBA89126CEE6869AF /* Pods-RNM UniverseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5233388C2AEE1CFC00A24E8C /* RNM Universe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523338B72AEE1CFF00A24E8C /* Build configuration list for PBXNativeTarget "RNM Universe" */;
+			buildPhases = (
+				22E9E902398FBA89DF92E9A0 /* [CP] Check Pods Manifest.lock */,
+				523338892AEE1CFC00A24E8C /* Sources */,
+				5233388A2AEE1CFC00A24E8C /* Frameworks */,
+				5233388B2AEE1CFC00A24E8C /* Resources */,
+				9F88C56242C75D0EA5D842E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNM Universe";
+			productName = "RNM Universe";
+			productReference = 5233388D2AEE1CFC00A24E8C /* RNM Universe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		523338A22AEE1CFF00A24E8C /* RNM UniverseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523338BA2AEE1CFF00A24E8C /* Build configuration list for PBXNativeTarget "RNM UniverseTests" */;
+			buildPhases = (
+				CF08AA7B324FD4CAAF98A2A0 /* [CP] Check Pods Manifest.lock */,
+				5233389F2AEE1CFF00A24E8C /* Sources */,
+				523338A02AEE1CFF00A24E8C /* Frameworks */,
+				523338A12AEE1CFF00A24E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				523338A52AEE1CFF00A24E8C /* PBXTargetDependency */,
+			);
+			name = "RNM UniverseTests";
+			productName = "RNM UniverseTests";
+			productReference = 523338A32AEE1CFF00A24E8C /* RNM UniverseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		523338AC2AEE1CFF00A24E8C /* RNM UniverseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523338BD2AEE1CFF00A24E8C /* Build configuration list for PBXNativeTarget "RNM UniverseUITests" */;
+			buildPhases = (
+				EA000278AA1F00C61C2EE2B4 /* [CP] Check Pods Manifest.lock */,
+				523338A92AEE1CFF00A24E8C /* Sources */,
+				523338AA2AEE1CFF00A24E8C /* Frameworks */,
+				523338AB2AEE1CFF00A24E8C /* Resources */,
+				B4905DAEEBC4D5EAA6137DB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				523338AF2AEE1CFF00A24E8C /* PBXTargetDependency */,
+			);
+			name = "RNM UniverseUITests";
+			productName = "RNM UniverseUITests";
+			productReference = 523338AD2AEE1CFF00A24E8C /* RNM UniverseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		523338852AEE1CFC00A24E8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5233388C2AEE1CFC00A24E8C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					523338A22AEE1CFF00A24E8C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5233388C2AEE1CFC00A24E8C;
+					};
+					523338AC2AEE1CFF00A24E8C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5233388C2AEE1CFC00A24E8C;
+					};
+				};
+			};
+			buildConfigurationList = 523338882AEE1CFC00A24E8C /* Build configuration list for PBXProject "RNM Universe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 523338842AEE1CFC00A24E8C;
+			productRefGroup = 5233388E2AEE1CFC00A24E8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5233388C2AEE1CFC00A24E8C /* RNM Universe */,
+				523338A22AEE1CFF00A24E8C /* RNM UniverseTests */,
+				523338AC2AEE1CFF00A24E8C /* RNM UniverseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5233388B2AEE1CFC00A24E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5233389D2AEE1CFF00A24E8C /* LaunchScreen.storyboard in Resources */,
+				5233389A2AEE1CFF00A24E8C /* Assets.xcassets in Resources */,
+				523338982AEE1CFC00A24E8C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523338A12AEE1CFF00A24E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523338E82AEF4AEA00A24E8C /* Readme.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523338AB2AEE1CFF00A24E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22E9E902398FBA89DF92E9A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNM Universe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F88C56242C75D0EA5D842E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNM Universe/Pods-RNM Universe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNM Universe/Pods-RNM Universe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNM Universe/Pods-RNM Universe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4905DAEEBC4D5EAA6137DB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNM Universe-RNM UniverseUITests/Pods-RNM Universe-RNM UniverseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNM Universe-RNM UniverseUITests/Pods-RNM Universe-RNM UniverseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNM Universe-RNM UniverseUITests/Pods-RNM Universe-RNM UniverseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF08AA7B324FD4CAAF98A2A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNM UniverseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA000278AA1F00C61C2EE2B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNM Universe-RNM UniverseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		523338892AEE1CFC00A24E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523338D82AEE1E4600A24E8C /* CharacterDetailViewController.swift in Sources */,
+				523338D62AEE1E3200A24E8C /* CharacterCollectionViewCell.swift in Sources */,
+				523338D42AEE1E1800A24E8C /* CharacterViewModel.swift in Sources */,
+				523338C52AEE1D7B00A24E8C /* UIViewController+Extension.swift in Sources */,
+				523338CD2AEE1DC700A24E8C /* Character.swift in Sources */,
+				523338912AEE1CFC00A24E8C /* AppDelegate.swift in Sources */,
+				523338D22AEE1E0500A24E8C /* CharacterViewController.swift in Sources */,
+				523338932AEE1CFC00A24E8C /* SceneDelegate.swift in Sources */,
+				523338DA2AEE1E5E00A24E8C /* EpisodeTableViewCell.swift in Sources */,
+				523338C22AEE1D4F00A24E8C /* Helper.swift in Sources */,
+				523338C82AEE1D9700A24E8C /* ServiceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5233389F2AEE1CFF00A24E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523338DE2AEEC4DE00A24E8C /* MockServiceManager.swift in Sources */,
+				523338E62AEECB4B00A24E8C /* TestData+CharacterResponse.swift in Sources */,
+				523338E12AEEC57800A24E8C /* TestData+Character.swift in Sources */,
+				523338DC2AEE322400A24E8C /* CharacterViewModelTests.swift in Sources */,
+				523338A82AEE1CFF00A24E8C /* RNM_UniverseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523338A92AEE1CFF00A24E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523338B22AEE1CFF00A24E8C /* RNM_UniverseUITests.swift in Sources */,
+				523338B42AEE1CFF00A24E8C /* RNM_UniverseUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		523338A52AEE1CFF00A24E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5233388C2AEE1CFC00A24E8C /* RNM Universe */;
+			targetProxy = 523338A42AEE1CFF00A24E8C /* PBXContainerItemProxy */;
+		};
+		523338AF2AEE1CFF00A24E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5233388C2AEE1CFC00A24E8C /* RNM Universe */;
+			targetProxy = 523338AE2AEE1CFF00A24E8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		523338962AEE1CFC00A24E8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				523338972AEE1CFC00A24E8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5233389B2AEE1CFF00A24E8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5233389C2AEE1CFF00A24E8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		523338B52AEE1CFF00A24E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		523338B62AEE1CFF00A24E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		523338B82AEE1CFF00A24E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF0E1480B05C397E3F77A43 /* Pods-RNM Universe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RNM Universe/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.RNM-Universe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		523338B92AEE1CFF00A24E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AE367EB254CDA862CE8CDA /* Pods-RNM Universe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RNM Universe/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.RNM-Universe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		523338BB2AEE1CFF00A24E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C772598A4F8CEA08CE5C618 /* Pods-RNM UniverseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.RNM-UniverseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNM Universe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RNM Universe";
+			};
+			name = Debug;
+		};
+		523338BC2AEE1CFF00A24E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4719B24FBA89126CEE6869AF /* Pods-RNM UniverseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.RNM-UniverseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNM Universe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RNM Universe";
+			};
+			name = Release;
+		};
+		523338BE2AEE1CFF00A24E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74B88489C7B3D195509B0A0 /* Pods-RNM Universe-RNM UniverseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.RNM-UniverseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RNM Universe";
+			};
+			name = Debug;
+		};
+		523338BF2AEE1CFF00A24E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4994D19C0F57DFC32FEF5AB6 /* Pods-RNM Universe-RNM UniverseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.RNM-UniverseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RNM Universe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		523338882AEE1CFC00A24E8C /* Build configuration list for PBXProject "RNM Universe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523338B52AEE1CFF00A24E8C /* Debug */,
+				523338B62AEE1CFF00A24E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523338B72AEE1CFF00A24E8C /* Build configuration list for PBXNativeTarget "RNM Universe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523338B82AEE1CFF00A24E8C /* Debug */,
+				523338B92AEE1CFF00A24E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523338BA2AEE1CFF00A24E8C /* Build configuration list for PBXNativeTarget "RNM UniverseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523338BB2AEE1CFF00A24E8C /* Debug */,
+				523338BC2AEE1CFF00A24E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523338BD2AEE1CFF00A24E8C /* Build configuration list for PBXNativeTarget "RNM UniverseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523338BE2AEE1CFF00A24E8C /* Debug */,
+				523338BF2AEE1CFF00A24E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 523338852AEE1CFC00A24E8C /* Project object */;
+}

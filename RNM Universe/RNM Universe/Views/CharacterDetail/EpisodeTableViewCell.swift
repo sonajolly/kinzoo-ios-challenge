@@ -20,6 +20,8 @@ class EpisodeTableViewCell: UITableViewCell {
         self.episodeUrl = episode
         if let episodeNumber = episode.components(separatedBy: "/").last {
             self.episodeLabel.text = "Episode \(episodeNumber)"
+        } else {
+            self.episodeLabel.text = self.episodeUrl
         }
     }
 

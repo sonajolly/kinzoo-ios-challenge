@@ -30,6 +30,8 @@
 		523338E12AEEC57800A24E8C /* TestData+Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338E02AEEC57800A24E8C /* TestData+Character.swift */; };
 		523338E62AEECB4B00A24E8C /* TestData+CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523338E52AEECB4B00A24E8C /* TestData+CharacterResponse.swift */; };
 		523338E82AEF4AEA00A24E8C /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 523338E72AEF4AEA00A24E8C /* Readme.md */; };
+		527B3A1A2AF190FA00DE7F3B /* CharacterViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B3A192AF190FA00DE7F3B /* CharacterViewControllerUITests.swift */; };
+		527B3A1C2AF1910E00DE7F3B /* CharacterDetailViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B3A1B2AF1910E00DE7F3B /* CharacterDetailViewControllerUITests.swift */; };
 		724F3231110956FB821A93D7 /* Pods_RNM_UniverseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E74247D8C17C3C368AAE38 /* Pods_RNM_UniverseTests.framework */; };
 		F11B9E62125405F039871118 /* Pods_RNM_Universe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562A78D64F2FF46057340272 /* Pods_RNM_Universe.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +85,8 @@
 		523338E02AEEC57800A24E8C /* TestData+Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestData+Character.swift"; sourceTree = "<group>"; };
 		523338E52AEECB4B00A24E8C /* TestData+CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestData+CharacterResponse.swift"; sourceTree = "<group>"; };
 		523338E72AEF4AEA00A24E8C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		527B3A192AF190FA00DE7F3B /* CharacterViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewControllerUITests.swift; sourceTree = "<group>"; };
+		527B3A1B2AF1910E00DE7F3B /* CharacterDetailViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewControllerUITests.swift; sourceTree = "<group>"; };
 		562A78D64F2FF46057340272 /* Pods_RNM_Universe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNM_Universe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E74247D8C17C3C368AAE38 /* Pods_RNM_UniverseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNM_UniverseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74B88489C7B3D195509B0A0 /* Pods-RNM Universe-RNM UniverseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNM Universe-RNM UniverseUITests.debug.xcconfig"; path = "Target Support Files/Pods-RNM Universe-RNM UniverseUITests/Pods-RNM Universe-RNM UniverseUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 			children = (
 				523338B12AEE1CFF00A24E8C /* RNM_UniverseUITests.swift */,
 				523338B32AEE1CFF00A24E8C /* RNM_UniverseUITestsLaunchTests.swift */,
+				527B3A192AF190FA00DE7F3B /* CharacterViewControllerUITests.swift */,
+				527B3A1B2AF1910E00DE7F3B /* CharacterDetailViewControllerUITests.swift */,
 			);
 			path = "RNM UniverseUITests";
 			sourceTree = "<group>";
@@ -548,6 +554,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527B3A1A2AF190FA00DE7F3B /* CharacterViewControllerUITests.swift in Sources */,
+				527B3A1C2AF1910E00DE7F3B /* CharacterDetailViewControllerUITests.swift in Sources */,
 				523338B22AEE1CFF00A24E8C /* RNM_UniverseUITests.swift in Sources */,
 				523338B42AEE1CFF00A24E8C /* RNM_UniverseUITestsLaunchTests.swift in Sources */,
 			);

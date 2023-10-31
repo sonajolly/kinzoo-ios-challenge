@@ -26,8 +26,9 @@ class CharacterDetailViewController: UIViewController {
     
     func initialiseUI() {
         self.navigationItem.largeTitleDisplayMode = .never
+        self.title = "Info"
+        self.addAccessibilityIdentifiers()
         if let character = self.character {
-            self.title = character.name
             self.thumbnailImage.sd_setImage(with: URL(string: character.image), placeholderImage: UIImage(systemName: "person.crop.square"))
             self.nameLabel.text = character.name
             self.createdAtLabel.text = Helper.getDate(from: character.created)
@@ -37,6 +38,16 @@ class CharacterDetailViewController: UIViewController {
             self.locationLabel.text = character.location.name
             self.originLabel.text = character.origin.name
         }
+    }
+    
+    func addAccessibilityIdentifiers() {
+        self.nameLabel.accessibilityIdentifier = "characterName"
+        self.createdAtLabel.accessibilityIdentifier = "characterCreatedAt"
+        self.statusLabel.accessibilityIdentifier = "characterStatus"
+        self.speciesLabel.accessibilityIdentifier = "characterSpecies"
+        self.genderLabel.accessibilityIdentifier = "characterGender"
+        self.locationLabel.accessibilityIdentifier = "characterLocation"
+        self.originLabel.accessibilityIdentifier = "characterOrigin"
     }
 }
 

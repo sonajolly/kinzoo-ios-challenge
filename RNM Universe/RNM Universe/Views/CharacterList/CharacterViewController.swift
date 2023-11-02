@@ -60,7 +60,9 @@ class CharacterViewController: UIViewController {
     
     func showErrorAlert(message: String) {
         DispatchQueue.main.async {
-            self.showAlert(title: "Network Error", message: message)
+            self.showAlert(title: "Network Error", message: message) {
+                self.viewModel.requestCharacters()
+            }
         }
     }
     

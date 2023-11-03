@@ -102,6 +102,4 @@ extension CharacterViewController: UICollectionViewDelegate, UICollectionViewDat
                 viewModel.loadNextBatchIfNeeded(for: indexPath)
         }
     }
-
 }
-

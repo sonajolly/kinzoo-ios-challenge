@@ -33,6 +33,7 @@ class CharacterViewModel {
         self.showLoading?()
         isFetchingData = true
         serviceManager.request(endPoint: .getCharacters(page: currentPage), responseType: Item.self) { result in
+            print("Current Page", self.currentPage)
             self.hideLoading?()
             self.isFetchingData = false
             switch result {
